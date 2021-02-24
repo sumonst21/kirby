@@ -9,6 +9,12 @@
       @change="$emit('change', $event)"
       @end="onEnd"
     >
+      <!--
+        Emitted on every dropdown action / option
+        @event action
+        @property {object} item
+        @property {string} click
+      -->
       <component
         :is="elements.item"
         v-for="(item, index) in items"
@@ -30,6 +36,11 @@
       />
       <!-- eslint-enable vue/no-v-html -->
       <div class="k-collection-pagination">
+        <!--
+          Emitted when the pagination changes
+          @event paginate
+          @property {object} pagination
+        -->
         <k-pagination
           v-if="hasPagination"
           v-bind="paginationOptions"
@@ -41,6 +52,9 @@
 </template>
 
 <script>
+/**
+ * The `k-collection` component is a wrapper around `k-cards` and `k-list-items` that makes it easy to switch between the two layouts and adds sortabilty and pagination to the items.
+ */
 export default {
   props: {
     help: String,
@@ -135,6 +149,11 @@ export default {
       if (this.over) {
         this.over.removeAttribute("data-over");
       }
+      /**
+       * Emitted when the sorting has stopped
+       * @event sort
+       * @property {array} items
+       */
       this.$emit("sort", this.items);
     },
     onDragStart($event, dragText) {

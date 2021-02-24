@@ -37,12 +37,18 @@ import Field from "../Field.vue";
 import Input from "../Input.vue";
 import DateTimeInput from "../Input/DateTimeInput.vue";
 
+/**
+ * @example <k-date-field v-model="date" name="date" label="Date" />
+ */
 export default {
   inheritAttrs: false,
   props: {
     ...Field.props,
     ...Input.props,
     ...DateTimeInput.props,
+    /**
+     * Deactivate the dropdown calendar or not
+     */
     calendar: {
       type: Boolean,
       default: true

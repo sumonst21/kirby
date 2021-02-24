@@ -5,6 +5,9 @@
 </template>
 
 <script>
+/**
+ * The Column component can be used within a Grid component to layout elements in a very convenient way. The Grid is based on 12 columns by default and each column can change its width with the width property:
+ */
 export default {
   props: {
     width: String,
