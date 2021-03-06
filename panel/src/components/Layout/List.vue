@@ -19,7 +19,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style>
 .k-list .k-list-item:not(:last-child) {
   margin-bottom: 2px;
 }

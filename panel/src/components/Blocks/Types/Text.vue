@@ -24,9 +24,9 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style>
 .k-block-type-text-input {
-  font-size: $text-base;
+  font-size: var(--text-base);
   line-height: 1.5em;
 }
 </style>

@@ -147,7 +147,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style>
 .k-collection-help {
   padding: .5rem .75rem;
 }

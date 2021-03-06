@@ -6,7 +6,7 @@
   />
 </template>
 
-<style lang="scss">
+<style>
 .k-block-type-default .k-block-title {
   line-height: 1.5em;
 }

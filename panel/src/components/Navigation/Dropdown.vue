@@ -4,7 +4,7 @@
   </span>
 </template>
 
-<style lang="scss">
+<style>
 .k-dropdown {
   position: relative;
 }

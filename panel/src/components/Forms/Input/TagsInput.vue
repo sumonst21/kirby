@@ -375,13 +375,13 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style>
 .k-tags-input {
   display: flex;
   flex-wrap: wrap;
 }
 .k-tags-input .k-sortable-ghost {
-  background: $color-focus;
+  background: var(--color-focus);
 }
 .k-tags-input-element {
   flex-grow: 1;
@@ -400,7 +400,6 @@ export default {
 .k-tags-input-element input:focus {
   outline: 0;
 }
-
 .k-tags-input[data-layout="list"] .k-tag {
   width: 100%;
   margin-right: 0 !important;

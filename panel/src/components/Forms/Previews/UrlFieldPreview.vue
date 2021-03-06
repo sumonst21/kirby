@@ -27,13 +27,12 @@ export default {
 }
 </script>
 
-<style lang="scss">
-
+<style>
 .k-url-field-preview {
   padding: 0 .75rem;
 }
 .k-url-field-preview a {
-  color: $color-focus;
+  color: var(--color-focus);
   text-decoration: underline;
   transition: color .3s;
   overflow: hidden;
@@ -42,7 +41,7 @@ export default {
   text-overflow: ellipsis;
 }
 .k-url-field-preview a:hover {
-  color: $color-black;
+  color: var(--color-black);
 }
 
 </style>

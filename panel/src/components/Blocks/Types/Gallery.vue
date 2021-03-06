@@ -15,7 +15,7 @@
   </ul>
 </template>
 
-<style lang="scss">
+<style>
 .k-block-type-gallery ul {
   display: grid;
   grid-gap: .75rem;
@@ -27,7 +27,7 @@
 }
 .k-block-type-gallery li:empty {
   padding-bottom: 100%;
-  background: $color-background;
+  background: var(--color-background);
 }
 .k-block-type-gallery li {
   display: flex;

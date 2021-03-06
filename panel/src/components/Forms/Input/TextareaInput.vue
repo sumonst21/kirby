@@ -283,7 +283,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style>
 .k-textarea-input-wrapper {
   position: relative;
 }
@@ -297,7 +297,7 @@ export default {
   color: inherit;
 }
 .k-textarea-input-native::placeholder {
-  color: $color-light-grey;
+  color: var(--color-gray-500);
 }
 .k-textarea-input-native:focus {
   outline: 0;
@@ -319,11 +319,11 @@ export default {
   min-height: 45rem;
 }
 .k-textarea-input-native[data-font="monospace"] {
-  font-family: $font-mono;
+  font-family: var(--font-mono);
 }
 
 .k-toolbar {
-  margin-bottom: 0.25rem;
+  margin-bottom: .25rem;
   color: #aaa;
 }
 .k-textarea-input:focus-within .k-toolbar {
@@ -332,8 +332,8 @@ export default {
   right: 0;
   left: 0;
   z-index: 1;
-  box-shadow: rgba(0, 0, 0, 0.05) 0 2px 5px;
-  border-bottom: 1px solid rgba(#000, 0.1);
+  box-shadow: rgba(0, 0, 0, .05) 0 2px 5px;
+  border-bottom: 1px solid rgba(0 ,0 ,0 , .1);
   color: #000;
 }
 </style>

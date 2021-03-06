@@ -144,7 +144,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style>
 .k-select-input {
   position: relative;
   display: block;
@@ -168,6 +168,6 @@ export default {
   cursor: default;
 }
 .k-select-input-native {
-  font-weight: $font-normal;
+  font-weight: var(--font-normal);
 }
 </style>

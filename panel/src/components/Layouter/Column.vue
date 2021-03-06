@@ -33,13 +33,13 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style>
 .k-layout-column {
   position: relative;
   height: 100%;
   display: flex;
   flex-direction: column;
-  background: $color-white;
+  background: var(--color-white);
   min-height: 6rem;
 }
 .k-layout-column:focus {
@@ -50,7 +50,7 @@ export default {
   box-shadow: none;
   padding: 0;
   height: 100%;
-  background: $color-white;
+  background: var(--color-white);
 }
 .k-layout-column .k-blocks-list {
   display: flex;

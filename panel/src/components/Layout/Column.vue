@@ -13,7 +13,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style>
 .k-column {
   min-width: 0;
   grid-column-start: span 12;
@@ -25,7 +25,7 @@ export default {
   z-index: 2;
 }
 
-@media screen and (min-width: $breakpoint-md) {
+@media screen and (min-width: 65em) {
   .k-column[data-width="1/1"],
   .k-column[data-width="2/2"],
   .k-column[data-width="3/3"],
