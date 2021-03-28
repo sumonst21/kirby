@@ -15,6 +15,7 @@
 
 <script>
 export default {
+  extends: "k-block-type",
   computed: {
     video() {
 
