@@ -1,10 +1,6 @@
 <script>
-import TextInput from "./TextInput.vue";
-
-export default {
-  extends: TextInput,
+export const props = {
   props: {
-    ...TextInput.props,
     autocomplete: {
       type: String,
       default: "email"
@@ -20,5 +16,10 @@ export default {
       default: "email"
     }
   }
+}
+
+export default {
+  extends: "k-text-input",
+  mixins: [props]
 }
 </script>
