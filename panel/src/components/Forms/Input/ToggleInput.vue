@@ -16,8 +16,7 @@
 <script>
 import { required } from "vuelidate/lib/validators";
 
-export default {
-  inheritAttrs: false,
+export const props = {
   props: {
     autofocus: Boolean,
     disabled: Boolean,
@@ -33,7 +32,12 @@ export default {
     },
     required: Boolean,
     value: Boolean,
-  },
+  }
+}
+
+export default {
+  mixins: [props],
+  inheritAttrs: false,
   computed: {
     label() {
       if (Array.isArray(this.text)) {
